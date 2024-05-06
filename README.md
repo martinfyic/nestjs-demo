@@ -18,6 +18,7 @@ $ npm i -g @nestjs/cli
 1. Clonar el repositorio
 2. Ejecutar `npm install`Running the app
 3. Levantar base de datos mediante docker `docker compose up -d`
+4. Reconstruir la base de dato con el seed `GET/ http://localhost:3000/api/v1/seed`
 
 ## Ejecutando la aplicación
 
