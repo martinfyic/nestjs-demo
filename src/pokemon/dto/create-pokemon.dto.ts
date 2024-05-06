@@ -1,7 +1,9 @@
 import {
   IsInt,
+  IsNotEmpty,
   IsPositive,
   IsString,
+  IsUrl,
   MaxLength,
   Min,
   MinLength,
@@ -16,4 +18,7 @@ export class CreatePokemonDto {
   @IsPositive()
   @Min(1)
   no: number;
+  @IsUrl()
+  @IsNotEmpty()
+  url: string;
 }
