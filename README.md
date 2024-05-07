@@ -18,9 +18,15 @@ $ npm i -g @nestjs/cli
 1. Clonar el repositorio
 2. Ejecutar `npm install`Running the app
 3. Levantar base de datos mediante docker `docker compose up -d`
-4. Reconstruir la base de dato con el seed `GET/ http://localhost:3000/api/v1/seed`
+4. Clonar archivo **.env.template** y renombrarlo a **.env**
+5. Completar las variables de entorno
+   1. `MONGODB_URL`
+   2. `PORT`
+   3. `DEFAULT_LIMIT` _(opcional)_
+6. Ejecutar la app en desarrollo `npm run start:dev`
+7. Reconstruir la base de dato con el seed `GET/ http://localhost:3000/api/v1/seed`
 
-## Ejecutando la aplicación
+## Comandos para ejecutar la aplicación
 
 ```bash
 # desarrollo
